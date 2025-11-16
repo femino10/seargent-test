@@ -1,5 +1,5 @@
 // src/app/components/HowItWorks.tsx
-export default function HowItWorks() {
+export default function HowItWorks({ id }: { id?: string }) {
   const steps = [
     {
       number: "01",
@@ -28,18 +28,17 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id={id} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">How it works</h2>
         <p className="text-gray-600 mb-16 max-w-3xl mx-auto text-sm leading-relaxed">
           Choose the service that best fits your needs—whether it’s homework help, professional editing, or resume writing. Our tailored packages ensure there’s something for everyone:
         </p>
 
-        {/* Desktop: Full Hexagons */}
+        {/* Desktop */}
         <div className="hidden md:flex justify-center items-start gap-6">
           {steps.map((step, i) => (
             <div key={i} className="flex flex-col items-center flex-1">
-              {/* Hexagon */}
               <div
                 className={`relative w-64 h-64 ${step.color} border-2 rounded-xl clip-hexagon p-6 flex flex-col justify-center items-center text-center shadow-sm`}
               >
@@ -47,7 +46,6 @@ export default function HowItWorks() {
                 <h3 className="text-lg font-bold text-gray-800 mb-2">{step.title}</h3>
                 <p className="text-xs text-gray-600 leading-tight">{step.desc}</p>
               </div>
-              {/* Connector Line */}
               {i < steps.length - 1 && (
                 <div className="w-full h-0.5 bg-gray-300 mt-6"></div>
               )}
@@ -55,7 +53,7 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        {/* Mobile: Stacked */}
+        {/* Mobile */}
         <div className="md:hidden space-y-10">
           {steps.map((step, i) => (
             <div key={i} className="flex flex-col items-center">

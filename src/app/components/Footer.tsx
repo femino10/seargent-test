@@ -19,10 +19,10 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-green-400 transition">Services</a></li>
-              <li><a href="#" className="hover:text-green-400 transition">How It Works</a></li>
-              <li><a href="#" className="hover:text-green-400 transition">Meet Our Experts</a></li>
-              <li><a href="#" className="hover:text-green-400 transition">Contact Us</a></li>
+              <li><a href="#services" className="hover:text-green-400 transition">Services</a></li>  {/* ← SCROLL */}
+              <li><a href="#how-it-works" className="hover:text-green-400 transition">How It Works</a></li>  {/* ← SCROLL */}
+              <li><a href="#experts" className="hover:text-green-400 transition">Meet Our Experts</a></li>  {/* ← SCROLL */}
+              <li><a href="#contact" className="hover:text-green-400 transition">Contact Us</a></li>  {/* ← PLACEHOLDER */}
             </ul>
           </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
-         Felix Ndirangu
+          Felix Ndirangu
         </div>
       </div>
     </footer>
