@@ -5,6 +5,7 @@ import Benefits from './components/Benefits';
 import Services from './components/Services';
 import HowItWorks from './components/HowItWorks';
 import Experts from './components/Experts';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <HowItWorks />
         <Experts />
       </main>
+      <Footer />
     </>
   );
 }
